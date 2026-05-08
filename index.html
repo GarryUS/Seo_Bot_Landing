@@ -145,7 +145,6 @@
     .chip-lbl { font-size: 9px; }
     .chip-link { font-size: 9px; margin-top:5px; }
     
-    .cover-footer { padding-top: 16px; flex-direction: column; gap: 10px; align-items: flex-start; }
     .byline { font-size: 12px; }
     .pg { font-size: 11px; }
     
@@ -190,11 +189,9 @@
     .rn { font-size: 11px; margin-right: 7px; }
     .risk-pill { display: inline-block; }
     
-    .pg-footer { padding: 10px 20px; flex-direction: column; gap: 8px; align-items: flex-start; }
-    .ft-brand { font-size: 11px; }
-    .ft-pg { font-size: 11px; }
+    .site-footer { padding:16px 20px 20px; font-size:11px; }
     
-    /* page 3 */
+    /* economy / cta */
     .econ-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 14px; }
     .econ-card { padding: 14px 16px; }
     .econ-lbl { font-size: 9px; margin-bottom: 8px; }
@@ -378,14 +375,8 @@
     text-transform:uppercase;
   }
 
-  .cover-footer {
-    display:flex; align-items:center; justify-content:space-between;
-    padding-top:18px; border-top:1px solid rgba(255,255,255,.06);
-  }
   .byline { font-family:'DM Mono',monospace; font-size:11px; color:var(--slate); letter-spacing:.08em; }
   .byline strong { color:var(--white); font-weight:500; }
-  .pg { font-family:'DM Mono',monospace; font-size:11px; color:var(--navy-5); letter-spacing:.1em; }
-  .pg, .ft-pg { display:none; }
 
 
   /* ══════════════════════════
@@ -428,12 +419,15 @@
   .sec-head p strong { color:var(--white); }
   .sec-head p em { color:var(--amber); font-style:normal; font-weight:500; }
 
-  .pg-footer {
-    display:flex; align-items:center; justify-content:space-between;
-    padding:10px 36px; border-top:1px solid rgba(255,255,255,.05);
+  .site-footer {
+    padding:18px 36px 22px;
+    border-top:1px solid rgba(255,255,255,.05);
+    font-family:'DM Mono',monospace;
+    font-size:11px;
+    color:var(--navy-5);
+    letter-spacing:.1em;
+    text-transform:uppercase;
   }
-  .ft-brand { font-family:'DM Mono',monospace; font-size:11px; color:var(--navy-5); letter-spacing:.1em; text-transform:uppercase; }
-  .ft-pg    { font-family:'DM Mono',monospace; font-size:11px; color:var(--navy-5); letter-spacing:.1em; }
 
 
   /* ══════════════════════════
@@ -606,15 +600,11 @@
       </div>
     </div>
 
-    <div class="cover-footer">
-      <div class="byline"><strong>Инженер на маркетплейсе</strong> · wboz-ai.ru</div>
-      <div class="pg">01 / 03</div>
-    </div>
   </div>
-</div><!-- /cover -->
+</div><!-- /hero -->
 
 
-<!-- ══════════ PAGE 2 : TABLE ══════════ -->
+<!-- ══════════ CHECKLIST ══════════ -->
 <div class="page inner">
 
   <div class="scanline"></div>
@@ -696,14 +686,10 @@
     </table>
   </div>
 
-  <div class="pg-footer">
-    <span class="ft-brand">wboz-ai.ru · Инженер на маркетплейсе</span>
-    <span class="ft-pg">02 / 03</span>
-  </div>
-</div><!-- /page 2 -->
+</div><!-- /checklist -->
 
 
-<!-- ══════════ PAGE 3 : CTA ══════════ -->
+<!-- ══════════ ECONOMY / CTA ══════════ -->
 <div class="page inner">
 
   <div class="scanline"></div>
@@ -768,11 +754,8 @@
 
   </div>
 
-  <div class="pg-footer">
-    <span class="ft-brand">wboz-ai.ru · Инженер на маркетплейсе</span>
-    <span class="ft-pg">03 / 03</span>
-  </div>
-</div><!-- /page 3 -->
+  <footer class="site-footer">wboz-ai.ru · Инженер на маркетплейсе</footer>
+</div><!-- /economy-cta -->
 
 </body>
 </html>
