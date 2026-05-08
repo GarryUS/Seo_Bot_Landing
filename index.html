@@ -48,7 +48,7 @@
   /* ── PAGE ── */
   .page {
     width: 794px;
-    margin: 0 auto 28px;
+    margin: 0 auto 12px;
     background: var(--navy);
     position: relative;
     overflow: hidden;
@@ -223,6 +223,7 @@
       transparent 0%, var(--amber) 20%,
       var(--amber-l) 50%, var(--amber) 80%, transparent 100%);
     opacity: .55;
+    display: none;
   }
 
   /* ══════════════════════════
@@ -717,8 +718,10 @@
         <div class="econ-amt glow">6.3 ₽<span style="font-size:22px;color:var(--amber-l);"> / операция</span></div>
         <div class="bar-wrap"><div class="bar-fill-good"></div></div>
         <div class="econ-note" style="color:var(--amber);">−97% стоимости обработки</div>
-        <span class="save-badge">×37.6 дешевле</span>
-        <a href="https://t.me/wboz_ai/11" target="_blank" rel="noopener" style="display:block; margin-top:10px; font-family:'DM Mono',monospace; font-size:10px; color:var(--amber); letter-spacing:.08em; text-transform:uppercase; text-decoration:none;">Как считали? -></a>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <span class="save-badge">×37.6 дешевле</span>
+          <a href="https://t.me/wboz_ai/11" target="_blank" rel="noopener" style="font-family:'DM Mono',monospace; font-size:10px; color:var(--amber); letter-spacing:.08em; text-transform:uppercase; text-decoration:none;">Как считали? -></a>
+        </div>
       </div>
     </div>
 
