@@ -102,132 +102,6 @@
     .page { width: 210mm; margin: 0; box-shadow: none; break-inside: avoid; }
   }
 
-  /* ══════════════════════════
-     MOBILE RESPONSIVE
-  ══════════════════════════ */
-  @media (max-width: 768px) {
-    body::after { background-size: 24px 24px; }
-    
-    .page {
-      width: 100%; min-height: auto; margin: 0 0 12px;
-    }
-    .page:last-of-type { margin-bottom: 0; }
-    
-    .cover { height: auto; min-height: auto; }
-    .inner { height: auto; min-height: auto; }
-    
-    /* cover */
-    .cover-top {
-      padding: 12px 16px; flex-direction: column; gap: 10px; align-items: flex-start;
-    }
-    .logo-row { gap: 10px; }
-    .logo-img { height: 34px; width: 34px; }
-    .brand-name { font-size: 13px; }
-    .brand-sub { font-size: 11px; }
-    .doc-badge { font-size: 9px; padding: 5px 12px; }
-    
-    .hero-wrap { flex: 0 0 190px; }
-    
-    .cover-body { padding: 14px 16px 14px; }
-    .cover-body::before { left: 16px; }
-    
-    .eyebrow { gap: 8px; margin-bottom: 10px; }
-    .eyebrow-dash { width: 18px; }
-    .eyebrow-txt { font-size: 9px; }
-    
-    .cover-title { font-size: 38px; margin-bottom: 10px; line-height: 0.95; }
-    .cover-sub { font-size: 12px; padding-left: 10px; margin-bottom: 12px; line-height: 1.35; }
-    
-    .chip-row { gap: 8px; flex-wrap: nowrap; flex-direction: column; justify-content: flex-start; }
-    .chip, .chip:first-child { padding: 10px 12px; width: 100%; flex: 0 0 100%; min-width: 0; }
-    .chip-num { font-size: 22px; }
-    .chip-lbl { font-size: 10px; letter-spacing: .06em; white-space: normal; }
-    .chip-link { font-size: 9px; margin-top:5px; }
-    
-    .byline { font-size: 12px; }
-    .pg { font-size: 11px; }
-    
-    /* inner pages */
-    .pg-header { padding: 8px 16px; flex-direction: column; gap: 2px; align-items: flex-start; }
-    .pg-header-l { flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; }
-    .section-tag {
-      font-size: 9px;
-      padding: 0;
-      background: transparent;
-      border: 0;
-      border-radius: 0;
-      letter-spacing: .14em;
-      opacity: .85;
-    }
-    .pg-title { font-size: 15px; line-height: 1.25; max-width: 100%; }
-    .logo-sm { height: 20px; }
-    
-    .pg-body { padding: 12px 14px 14px; }
-    
-    .sec-head { margin-bottom: 12px; }
-    .sec-head h2 { font-size: 24px; }
-    .sec-head p { font-size: 12px; line-height: 1.45; }
-    
-    /* table → cards */
-    .audit { display: block; font-size: 14px; }
-    .audit thead { display: none; }
-    .audit tbody { display: block; }
-    .audit tbody tr {
-      display: block; margin-bottom: 10px;
-      border: 1px solid rgba(255,255,255,.08);
-      border-radius: 10px; padding: 12px 14px;
-      background: var(--row-odd) !important;
-    }
-    .audit tbody td {
-      display: block; padding: 0; width: 100% !important;
-      white-space: normal !important; line-height: 1.55;
-    }
-    .audit tbody td:first-child {
-      font-size: 14px; margin-bottom: 8px;
-      border-bottom: 1px solid rgba(255,255,255,.06);
-      padding-bottom: 8px;
-    }
-    .audit tbody td:nth-child(2) {
-      font-size: 12px; margin-bottom: 8px; color: var(--light-slate);
-    }
-    .audit tbody td:last-child {
-      font-size: 12px; line-height: 1.4;
-    }
-    .rn { font-size: 10px; margin-right: 6px; }
-    .risk-pill { display: inline-block; }
-    
-    .site-footer { padding:12px 16px 16px; font-size:10px; }
-    
-    /* economy / cta */
-    .econ-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; width: 100%; }
-    .econ-grid > * { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
-    .econ-card { width: 100% !important; max-width: 100% !important; min-width: 0 !important; padding: 14px 16px; box-sizing: border-box; }
-    .econ-lbl { font-size: 10px; margin-bottom: 8px; letter-spacing: .12em; }
-    .econ-amt.dim, .econ-amt.glow { font-size: 30px; margin-bottom: 8px; }
-    .econ-amt span { font-size: 13px !important; }
-    .econ-note { font-size: 11px; line-height: 1.4; }
-    .save-badge { font-size: 9px; padding: 3px 7px; margin-top: 4px; }
-    .econ-card [style*="Как считали?"] { margin-left: 0 !important; margin-top: 2px !important; display: inline-block !important; font-size: 9px !important; width: auto; }
-    .econ-card [style*="align-items:center"] { align-items: flex-start !important; gap: 6px !important; }
-    .econ-card [style*="align-items:center"] > * { max-width: 100%; }
-    .econ-proof { font-size: 9px; margin: 0 0 10px; }
-    
-    .itog { padding: 14px 16px; margin-bottom: 10px; }
-    .itog-eye { font-size: 8px; margin-bottom: 5px; }
-    .itog p { font-size: 12px; line-height: 1.45; }
-    
-    .summary-2col { grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; }
-    .sum-card { padding: 14px 16px; }
-    .sum-lbl { font-size: 8px; margin-bottom: 5px; }
-    .sum-txt { font-size: 12px; line-height: 1.45; }
-    
-    .cta-wrap { padding: 16px 16px; }
-    .cta-label { font-size: 9px; }
-    .cta-h { font-size: 16px; margin-bottom: 8px; }
-    .cta-p { font-size: 12px; margin-bottom: 14px; line-height: 1.4; }
-    .cta-btn { font-size: 11px; padding: 12px 20px; width: 100%; justify-content: center; }
-  }
-
   .scanline {
     height: 2px;
     background: linear-gradient(90deg,
@@ -549,6 +423,128 @@
     box-shadow: 0 0 28px rgba(255,140,0,.3);
   }
   .cta-link { font-family:'DM Mono',monospace; font-size:10px; color:var(--navy-5); letter-spacing:.08em; }
+
+  /* ══════════════════════════
+     MOBILE RESPONSIVE
+  ══════════════════════════ */
+  @media (max-width: 768px) {
+    body::after { background-size: 24px 24px; }
+
+    .page {
+      width: 100%; min-height: auto; margin: 0 0 12px;
+    }
+    .page:last-of-type { margin-bottom: 0; }
+
+    .cover { height: auto; min-height: auto; }
+    .inner { height: auto; min-height: auto; }
+
+    .cover-top {
+      padding: 12px 16px; flex-direction: column; gap: 10px; align-items: flex-start;
+    }
+    .logo-row { gap: 10px; }
+    .logo-img { height: 34px; width: 34px; }
+    .brand-name { font-size: 13px; }
+    .brand-sub { font-size: 11px; }
+    .doc-badge { font-size: 9px; padding: 5px 12px; }
+
+    .hero-wrap { flex: 0 0 190px; }
+
+    .cover-body { padding: 14px 16px 14px; }
+    .cover-body::before { left: 16px; }
+
+    .eyebrow { gap: 8px; margin-bottom: 10px; }
+    .eyebrow-dash { width: 18px; }
+    .eyebrow-txt { font-size: 9px; }
+
+    .cover-title { font-size: 38px; margin-bottom: 10px; line-height: 0.95; }
+    .cover-sub { font-size: 12px; padding-left: 10px; margin-bottom: 12px; line-height: 1.35; }
+
+    .chip-row { gap: 8px; flex-wrap: nowrap; flex-direction: column; justify-content: flex-start; }
+    .chip, .chip:first-child { padding: 10px 12px; width: 100%; flex: 0 0 100%; min-width: 0; }
+    .chip-num { font-size: 22px; }
+    .chip-lbl { font-size: 10px; letter-spacing: .06em; white-space: normal; }
+    .chip-link { font-size: 9px; margin-top:5px; }
+
+    .byline { font-size: 12px; }
+    .pg { font-size: 11px; }
+
+    .pg-header { padding: 8px 16px; flex-direction: column; gap: 2px; align-items: flex-start; }
+    .pg-header-l { flex-direction: column; align-items: flex-start; gap: 2px; width: 100%; }
+    .section-tag {
+      font-size: 9px;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      letter-spacing: .14em;
+      opacity: .85;
+    }
+    .pg-title { font-size: 15px; line-height: 1.25; max-width: 100%; }
+    .logo-sm { height: 20px; }
+
+    .pg-body { padding: 12px 14px 14px; }
+
+    .sec-head { margin-bottom: 12px; }
+    .sec-head h2 { font-size: 24px; }
+    .sec-head p { font-size: 12px; line-height: 1.45; }
+
+    .audit { display: block; font-size: 14px; }
+    .audit thead { display: none; }
+    .audit tbody { display: block; }
+    .audit tbody tr {
+      display: block; margin-bottom: 10px;
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 10px; padding: 12px 14px;
+      background: var(--row-odd) !important;
+    }
+    .audit tbody td {
+      display: block; padding: 0; width: 100% !important;
+      white-space: normal !important; line-height: 1.55;
+    }
+    .audit tbody td:first-child {
+      font-size: 14px; margin-bottom: 8px;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      padding-bottom: 8px;
+    }
+    .audit tbody td:nth-child(2) {
+      font-size: 12px; margin-bottom: 8px; color: var(--light-slate);
+    }
+    .audit tbody td:last-child {
+      font-size: 12px; line-height: 1.4;
+    }
+    .rn { font-size: 10px; margin-right: 6px; }
+    .risk-pill { display: inline-block; }
+
+    .site-footer { padding:12px 16px 16px; font-size:10px; }
+
+    .econ-grid { display: grid; grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; width: 100%; }
+    .econ-grid > * { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
+    .econ-card { width: 100% !important; max-width: 100% !important; min-width: 0 !important; padding: 14px 16px; box-sizing: border-box; }
+    .econ-lbl { font-size: 10px; margin-bottom: 8px; letter-spacing: .12em; }
+    .econ-amt.dim, .econ-amt.glow { font-size: 30px; margin-bottom: 8px; }
+    .econ-amt span { font-size: 13px !important; }
+    .econ-note { font-size: 11px; line-height: 1.4; }
+    .save-badge { font-size: 9px; padding: 3px 7px; margin-top: 4px; }
+    .econ-card [style*="Как считали?"] { margin-left: 0 !important; margin-top: 2px !important; display: inline-block !important; font-size: 9px !important; width: auto; }
+    .econ-card [style*="align-items:center"] { align-items: flex-start !important; gap: 6px !important; }
+    .econ-card [style*="align-items:center"] > * { max-width: 100%; }
+    .econ-proof { font-size: 9px; margin: 0 0 10px; }
+
+    .itog { padding: 14px 16px; margin-bottom: 10px; }
+    .itog-eye { font-size: 8px; margin-bottom: 5px; }
+    .itog p { font-size: 12px; line-height: 1.45; }
+
+    .summary-2col { grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; }
+    .sum-card { padding: 14px 16px; }
+    .sum-lbl { font-size: 8px; margin-bottom: 5px; }
+    .sum-txt { font-size: 12px; line-height: 1.45; }
+
+    .cta-wrap { padding: 16px 16px; }
+    .cta-label { font-size: 9px; }
+    .cta-h { font-size: 16px; margin-bottom: 8px; }
+    .cta-p { font-size: 12px; margin-bottom: 14px; line-height: 1.4; }
+    .cta-btn { font-size: 11px; padding: 12px 20px; width: 100%; justify-content: center; }
+  }
 </style>
 </head>
 <body>
