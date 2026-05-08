@@ -148,10 +148,10 @@
     .pg { font-size: 11px; }
     
     /* inner pages */
-    .pg-header { padding: 8px 16px; flex-direction: column; gap: 8px; align-items: flex-start; }
-    .pg-header-l { flex-direction: column; align-items: flex-start; gap: 8px; }
-    .section-tag { font-size: 9px; }
-    .pg-title { font-size: 12px; }
+    .pg-header { padding: 8px 16px; flex-direction: column; gap: 6px; align-items: flex-start; }
+    .pg-header-l { flex-direction: column; align-items: flex-start; gap: 6px; width: 100%; }
+    .section-tag { font-size: 9px; padding: 4px 10px; }
+    .pg-title { font-size: 15px; line-height: 1.25; max-width: 100%; }
     .logo-sm { height: 20px; }
     
     .pg-body { padding: 12px 16px 14px; }
@@ -191,13 +191,15 @@
     .site-footer { padding:12px 16px 16px; font-size:10px; }
     
     /* economy / cta */
-    .econ-grid { grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; }
-    .econ-card { padding: 14px 16px; }
-    .econ-lbl { font-size: 8px; margin-bottom: 6px; }
-    .econ-amt.dim, .econ-amt.glow { font-size: 26px; margin-bottom: 6px; }
-    .econ-amt span { font-size: 12px !important; }
-    .econ-note { font-size: 10px; line-height: 1.35; }
-    .save-badge { font-size: 9px; padding: 2px 6px; margin-top: 4px; }
+    .econ-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 10px; width: 100%; }
+    .econ-grid > * { display: block; width: 100%; max-width: 100%; }
+    .econ-card { width: 100%; max-width: 100%; padding: 16px 18px; }
+    .econ-lbl { font-size: 10px; margin-bottom: 8px; letter-spacing: .12em; }
+    .econ-amt.dim, .econ-amt.glow { font-size: 30px; margin-bottom: 8px; }
+    .econ-amt span { font-size: 13px !important; }
+    .econ-note { font-size: 11px; line-height: 1.4; }
+    .save-badge { font-size: 9px; padding: 3px 7px; margin-top: 4px; }
+    .econ-card [style*="Как считали?"] { margin-left: 0 !important; margin-top: 2px !important; display: inline-block; }
     .econ-proof { font-size: 9px; margin: 0 0 10px; }
     
     .itog { padding: 14px 16px; margin-bottom: 10px; }
