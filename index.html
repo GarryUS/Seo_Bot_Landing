@@ -57,6 +57,46 @@
   }
   .page:last-of-type { page-break-after: auto; }
 
+  /* ── audit table (desktop) ── */
+  .audit { width:100%; border-collapse:collapse; font-size:14.5px; }
+
+  .audit thead tr { background:var(--navy-5); }
+  .audit thead th {
+    padding:12px 15px; text-align:left;
+    font-family:'DM Mono',monospace; font-size:10.5px;
+    letter-spacing:.18em; text-transform:uppercase;
+    color:var(--slate); font-weight:500;
+    border-bottom:2px solid var(--amber);
+  }
+  .audit thead th:last-child { color:var(--amber); }
+
+  .audit tbody tr:nth-child(odd)  { background:var(--row-odd); }
+  .audit tbody tr:nth-child(even) { background:var(--row-even); }
+  .audit tbody tr { border-bottom:1px solid rgba(255,255,255,.04); }
+
+  .audit tbody td { padding:15px 15px; vertical-align:top; line-height:1.6; }
+  .audit tbody td:first-child {
+    font-weight:600; color:var(--white);
+    white-space:nowrap; width:172px; font-size:14px;
+  }
+  .audit tbody td:nth-child(2) {
+    color:var(--light-slate); font-size:14px; font-weight:300;
+  }
+  .audit tbody td:last-child {
+    color:var(--amber); font-weight:600; font-size:13.5px;
+    width:215px; line-height:1.55;
+  }
+  .rn {
+    font-family:'DM Mono',monospace; font-size:10.5px;
+    color:var(--navy-5); min-width:22px; display:inline-block;
+    margin-right:7px;
+  }
+  .risk-pill {
+    display:inline-block;
+    background: var(--amber-glow2);
+    border-radius:3px; padding:1px 6px;
+  }
+
   @page { size: A4; margin: 0; }
   @media print {
     html, body { width: 210mm; min-height: 297mm; background: var(--navy); }
@@ -376,46 +416,6 @@
   }
   .sec-head p strong { color:var(--white); }
   .sec-head p em { color:var(--amber); font-style:normal; font-weight:500; }
-
-  /* ── audit table ── */
-  .audit { width:100%; border-collapse:collapse; font-size:14.5px; }
-
-  .audit thead tr { background:var(--navy-5); }
-  .audit thead th {
-    padding:12px 15px; text-align:left;
-    font-family:'DM Mono',monospace; font-size:10.5px;
-    letter-spacing:.18em; text-transform:uppercase;
-    color:var(--slate); font-weight:500;
-    border-bottom:2px solid var(--amber);
-  }
-  .audit thead th:last-child { color:var(--amber); }
-
-  .audit tbody tr:nth-child(odd)  { background:var(--row-odd); }
-  .audit tbody tr:nth-child(even) { background:var(--row-even); }
-  .audit tbody tr { border-bottom:1px solid rgba(255,255,255,.04); }
-
-  .audit tbody td { padding:15px 15px; vertical-align:top; line-height:1.6; }
-  .audit tbody td:first-child {
-    font-weight:600; color:var(--white);
-    white-space:nowrap; width:172px; font-size:14px;
-  }
-  .audit tbody td:nth-child(2) {
-    color:var(--light-slate); font-size:14px; font-weight:300;
-  }
-  .audit tbody td:last-child {
-    color:var(--amber); font-weight:600; font-size:13.5px;
-    width:215px; line-height:1.55;
-  }
-  .rn {
-    font-family:'DM Mono',monospace; font-size:10.5px;
-    color:var(--navy-5); min-width:22px; display:inline-block;
-    margin-right:7px;
-  }
-  .risk-pill {
-    display:inline-block;
-    background: var(--amber-glow2);
-    border-radius:3px; padding:1px 6px;
-  }
 
   .pg-footer {
     display:flex; align-items:center; justify-content:space-between;
