@@ -356,6 +356,8 @@
     flex: 1 1 0;
     min-width:0;
   }
+  a.chip { color:inherit; text-decoration:none; }
+  a.chip:hover { border-color:var(--amber-border); background:var(--amber-glow2); }
   .chip.accent {
     border-color: var(--amber-border);
     background: var(--amber-glow);
@@ -590,10 +592,10 @@
           <div class="chip-num">3 из 10</div>
           <div class="chip-lbl">Уже критично</div>
         </div>
-        <div class="chip plain">
+        <a class="chip plain" href="https://t.me/wboz_ai/11" target="_blank" rel="noopener">
           <div class="chip-num">237₽</div>
           <div class="chip-lbl">vs 6.3₽ / операция</div>
-        </div>
+        </a>
       </div>
     </div>
 
