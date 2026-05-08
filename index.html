@@ -387,7 +387,7 @@
 
   .pg-header {
     display:flex; align-items:center; justify-content:space-between;
-    padding:14px 36px;
+    padding:8px 36px;
     border-bottom:1px solid rgba(255,255,255,.05);
   }
   .pg-header-l { display:flex; align-items:center; gap:14px; }
@@ -405,7 +405,7 @@
   }
   .logo-sm { height:26px; object-fit:contain; opacity:.55; }
 
-  .pg-body { flex:1; padding:22px 36px 20px; display:flex; flex-direction:column; }
+  .pg-body { flex:1; padding:16px 36px 18px; display:flex; flex-direction:column; }
 
   .sec-head { margin-bottom:20px; }
   .sec-head h2 {
@@ -442,6 +442,8 @@
     border-radius:10px; padding:22px 24px;
     position:relative; overflow:hidden;
   }
+  a.econ-card { color:inherit; text-decoration:none; display:block; }
+  a.econ-card:hover { transform:translateY(-2px); box-shadow:0 8px 24px rgba(255,140,0,.2); }
   .econ-card::before {
     content:''; position:absolute; top:0; left:0; right:0; height:2px;
     background:rgba(255,255,255,.08);
@@ -713,16 +715,16 @@
         <div class="bar-wrap"><div class="bar-fill-bad"></div></div>
         <div class="econ-note">Ручная проверка и чистка</div>
       </div>
-      <div class="econ-card accent-card">
+      <a class="econ-card accent-card" href="https://t.me/wboz_ai/11" target="_blank" rel="noopener">
         <div class="econ-lbl">После технического ремонта</div>
         <div class="econ-amt glow">6.3 ₽<span style="font-size:22px;color:var(--amber-l);"> / операция</span></div>
         <div class="bar-wrap"><div class="bar-fill-good"></div></div>
         <div class="econ-note" style="color:var(--amber);">−97% стоимости обработки</div>
         <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
           <span class="save-badge">×37.6 дешевле</span>
-          <a href="https://t.me/wboz_ai/11" target="_blank" rel="noopener" style="font-family:'DM Mono',monospace; font-size:10px; color:var(--amber); letter-spacing:.08em; text-transform:uppercase; text-decoration:none;">Как считали? -></a>
+          <span style="font-family:'DM Mono',monospace; font-size:10px; color:var(--amber); letter-spacing:.08em; text-transform:uppercase;">Как считали? -></span>
         </div>
-      </div>
+      </a>
     </div>
 
     <!-- итог -->
