@@ -138,12 +138,11 @@
     .cover-title { font-size: 38px; margin-bottom: 10px; line-height: 0.95; }
     .cover-sub { font-size: 12px; padding-left: 10px; margin-bottom: 12px; line-height: 1.35; }
     
-    .chip-row { gap: 6px; flex-wrap: wrap; justify-content: space-between; }
-    .chip { padding: 8px 10px; width: calc(50% - 3px); flex: 0 0 calc(50% - 3px); min-width: 0; }
-    .chip:first-child { width: 100%; flex: 0 0 100%; }
-    .chip-num { font-size: 20px; }
-    .chip-lbl { font-size: 8px; }
-    .chip-link { font-size: 8px; margin-top:4px; }
+    .chip-row { gap: 8px; flex-wrap: nowrap; flex-direction: column; justify-content: flex-start; }
+    .chip, .chip:first-child { padding: 10px 12px; width: 100%; flex: 0 0 100%; min-width: 0; }
+    .chip-num { font-size: 22px; }
+    .chip-lbl { font-size: 10px; letter-spacing: .06em; white-space: normal; }
+    .chip-link { font-size: 9px; margin-top:5px; }
     
     .byline { font-size: 12px; }
     .pg { font-size: 11px; }
@@ -193,27 +192,27 @@
     
     /* economy / cta */
     .econ-grid { grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; }
-    .econ-card { padding: 12px 14px; }
+    .econ-card { padding: 14px 16px; }
     .econ-lbl { font-size: 8px; margin-bottom: 6px; }
     .econ-amt.dim, .econ-amt.glow { font-size: 26px; margin-bottom: 6px; }
     .econ-amt span { font-size: 12px !important; }
-    .econ-note { font-size: 9px; }
-    .save-badge { font-size: 8px; padding: 2px 6px; margin-top: 4px; }
+    .econ-note { font-size: 10px; line-height: 1.35; }
+    .save-badge { font-size: 9px; padding: 2px 6px; margin-top: 4px; }
     .econ-proof { font-size: 9px; margin: 0 0 10px; }
     
-    .itog { padding: 12px 14px; margin-bottom: 10px; }
+    .itog { padding: 14px 16px; margin-bottom: 10px; }
     .itog-eye { font-size: 8px; margin-bottom: 5px; }
-    .itog p { font-size: 11px; line-height: 1.4; }
+    .itog p { font-size: 12px; line-height: 1.45; }
     
     .summary-2col { grid-template-columns: 1fr; gap: 10px; margin-bottom: 10px; }
-    .sum-card { padding: 12px 14px; }
+    .sum-card { padding: 14px 16px; }
     .sum-lbl { font-size: 8px; margin-bottom: 5px; }
-    .sum-txt { font-size: 11px; line-height: 1.4; }
+    .sum-txt { font-size: 12px; line-height: 1.45; }
     
-    .cta-wrap { padding: 16px 18px; }
+    .cta-wrap { padding: 16px 16px; }
     .cta-label { font-size: 9px; }
     .cta-h { font-size: 16px; margin-bottom: 8px; }
-    .cta-p { font-size: 11px; margin-bottom: 14px; }
+    .cta-p { font-size: 12px; margin-bottom: 14px; line-height: 1.4; }
     .cta-btn { font-size: 11px; padding: 12px 20px; width: 100%; justify-content: center; }
   }
 
