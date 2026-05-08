@@ -205,6 +205,7 @@
     .econ-amt span { font-size: 15px !important; }
     .econ-note { font-size: 10px; }
     .save-badge { font-size: 9px; padding: 3px 8px; margin-top: 6px; }
+    .econ-proof { font-size: 10px; margin: -2px 0 12px; }
     
     .itog { padding: 14px 18px; margin-bottom: 14px; }
     .itog-eye { font-size: 9px; margin-bottom: 6px; }
@@ -469,6 +470,18 @@
     color:var(--amber); letter-spacing:.08em;
   }
 
+  .econ-proof {
+    display:inline-block;
+    margin:-8px 0 18px;
+    font-family:'DM Mono',monospace;
+    font-size:11px;
+    color:var(--amber);
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    text-decoration:none;
+  }
+  .econ-proof:hover { color:var(--amber-l); }
+
   .itog {
     background: linear-gradient(135deg, rgba(255,140,0,.1), rgba(10,25,47,.6));
     border:1px solid var(--amber-border);
@@ -615,7 +628,7 @@
       <thead>
         <tr>
           <th style="width:160px">Тип ошибки</th>
-          <th>Техническая суть</th>
+          <th>Суть</th>
           <th style="width:204px">Риск для бюджета</th>
         </tr>
       </thead>
@@ -627,12 +640,12 @@
         </tr>
         <tr>
           <td><span class="rn">02</span>LSI-мусор</td>
-          <td>Прилагательные («красивый», «лучший»), размывающие релевантность.</td>
+          <td>Добавили «лучший/удобный/премиум» - реклама начала ехать в мусорный трафик.</td>
           <td><span class="risk-pill">Слив на нецелевые запросы.</span></td>
         </tr>
         <tr>
           <td><span class="rn">03</span>Морфологические дубли</td>
-          <td>Избыточный перебор падежей и чисел одного корня.</td>
+          <td>В заголовке несколько вариантов одного слова → WB режет релевантность.</td>
           <td><span class="risk-pill">Пессимизация карточки.</span></td>
         </tr>
         <tr>
@@ -652,7 +665,7 @@
         </tr>
         <tr>
           <td><span class="rn">07</span>Конфликт кластеров</td>
-          <td>Слова из разных кластеров в одном поле.</td>
+          <td>Карточка одновременно пытается продавать разные товары</td>
           <td><span class="risk-pill">Реклама мечется по аудиториям.</span></td>
         </tr>
         <tr>
@@ -712,6 +725,8 @@
         <span class="save-badge">×37.6 дешевле</span>
       </div>
     </div>
+
+    <a class="econ-proof" href="https://t.me/wboz_ai/11" target="_blank" rel="noopener">Как считали экономику -> разбор в Telegram</a>
 
     <!-- итог -->
     <div class="itog">
