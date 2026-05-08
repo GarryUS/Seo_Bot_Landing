@@ -148,13 +148,19 @@
     .pg { font-size: 11px; }
     
     /* inner pages */
-    .pg-header { padding: 8px 16px; flex-direction: column; gap: 6px; align-items: flex-start; }
-    .pg-header-l { flex-direction: column; align-items: flex-start; gap: 6px; width: 100%; }
-    .section-tag { font-size: 9px; padding: 4px 10px; }
+    .pg-header { padding: 8px 16px; flex-direction: column; gap: 4px; align-items: flex-start; }
+    .pg-header-l { flex-direction: column; align-items: flex-start; gap: 4px; width: 100%; }
+    .section-tag {
+      font-size: 9px;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+    }
     .pg-title { font-size: 15px; line-height: 1.25; max-width: 100%; }
     .logo-sm { height: 20px; }
     
-    .pg-body { padding: 12px 16px 14px; }
+    .pg-body { padding: 12px 14px 14px; }
     
     .sec-head { margin-bottom: 12px; }
     .sec-head h2 { font-size: 24px; }
@@ -191,15 +197,17 @@
     .site-footer { padding:12px 16px 16px; font-size:10px; }
     
     /* economy / cta */
-    .econ-grid { grid-template-columns: 1fr; gap: 12px; margin-bottom: 10px; width: 100%; }
-    .econ-grid > * { display: block; width: 100%; max-width: 100%; }
-    .econ-card { width: 100%; max-width: 100%; padding: 16px 18px; }
+    .econ-grid { display: grid; grid-template-columns: 1fr; gap: 12px; margin-bottom: 10px; width: 100%; }
+    .econ-grid > * { display: block !important; width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
+    .econ-card { width: 100% !important; max-width: 100% !important; min-width: 0 !important; padding: 16px 18px; box-sizing: border-box; }
     .econ-lbl { font-size: 10px; margin-bottom: 8px; letter-spacing: .12em; }
     .econ-amt.dim, .econ-amt.glow { font-size: 30px; margin-bottom: 8px; }
     .econ-amt span { font-size: 13px !important; }
     .econ-note { font-size: 11px; line-height: 1.4; }
     .save-badge { font-size: 9px; padding: 3px 7px; margin-top: 4px; }
-    .econ-card [style*="Как считали?"] { margin-left: 0 !important; margin-top: 2px !important; display: inline-block; }
+    .econ-card [style*="Как считали?"] { margin-left: 0 !important; margin-top: 2px !important; display: inline-block; font-size: 9px !important; }
+    .econ-card [style*="align-items:center"] { align-items: flex-start !important; gap: 6px !important; }
+    .econ-card [style*="align-items:center"] > * { max-width: 100%; }
     .econ-proof { font-size: 9px; margin: 0 0 10px; }
     
     .itog { padding: 14px 16px; margin-bottom: 10px; }
